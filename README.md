@@ -4,8 +4,8 @@
 * 主要实现原理：在cell中添加一个scrollView，并且在scrollView中添加一个imageView，当滑动tableView的时候动态改变cell中的scrollView的偏移量。
 * 实现代码:
 
-   `func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        
+   `func scrollViewDidScroll(_ scrollView: UIScrollView) {`
+   
         let tableView = scrollView as! UITableView
         
         let array = tableView.visibleCells
@@ -36,6 +36,6 @@
                 }
             }
         }
-    }`
+    }
     
 * 实现效果:![image](https://github.com/huhaosanxiong/MagicAdvertCell/raw/master/MagicCell/ScreenShot/IMG_0485.TRIM.MOV)
