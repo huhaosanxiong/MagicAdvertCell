@@ -48,4 +48,4 @@
         }
     }
     
-* 实现效果:![image](https://github.com/huhaosanxiong/MagicAdvertCell/raw/master/MagicCell/ScreenShot/RecordVideo)
+* 实现效果:![image](https://github.com/huhaosanxiong/MagicAdvertCell/raw/master/MagicCell/ScreenShot/RecordVideo.mov)
