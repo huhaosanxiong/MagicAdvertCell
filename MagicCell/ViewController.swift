@@ -79,7 +79,7 @@ extension ViewController : UITableViewDelegate,UITableViewDataSource{
         
         for obj in array {
             
-            //第一种方法
+            //第一种方法，cell中添加scrollView（计算神马的比较麻烦）
             if obj.isKind(of: TableViewCell.self) {
                 
                 let cell = obj as! TableViewCell
@@ -105,7 +105,7 @@ extension ViewController : UITableViewDelegate,UITableViewDataSource{
                 
             }else if obj.isKind(of: SecondTableViewCell.self) {
                 
-                //第二中方法，获取cell距离屏幕顶部的距离，传递给cell动态改变imgView的origin.y
+                //第二中方法，获取cell距离屏幕顶部的距离，传递给cell动态改变imgView的origin.y（比较简单）
                 let cell = obj as! SecondTableViewCell
                 
                 let rect = cell.superview?.convert(cell.frame, to: self.view)
