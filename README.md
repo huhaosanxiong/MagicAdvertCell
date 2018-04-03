@@ -12,6 +12,7 @@
         
         for obj in array {
             
+            //第一种方法，cell中添加scrollView（计算神马的比较麻烦）
             if obj.isKind(of: TableViewCell.self) {
                 
                 let cell = obj as! TableViewCell
@@ -34,8 +35,17 @@
                     
                     cell.scrollview.setContentOffset(CGPoint.init(x: 0, y: (maxOffset - scrollOffset)*speed), animated: false)
                 }
+                
+            }else if obj.isKind(of: SecondTableViewCell.self) {
+                
+                //第二中方法，获取cell距离屏幕顶部的距离，传递给cell动态改变imgView的origin.y（比较简单）
+                let cell = obj as! SecondTableViewCell
+                
+                let rect = cell.superview?.convert(cell.frame, to: self.view)
+                
+                cell.y = (rect?.origin.y)!
             }
         }
     }
     
-* 实现效果:![image](https://github.com/huhaosanxiong/MagicAdvertCell/raw/master/MagicCell/ScreenShot/IMG_0485.TRIM.MOV)
+* 实现效果:![image](https://github.com/huhaosanxiong/MagicAdvertCell/raw/master/MagicCell/ScreenShot/RecordVideo)
