@@ -14,6 +14,7 @@ return result
 }
 enum Asset {
   static let img0016 = ImageAsset(name: "IMG_0016")
+  static let img0522 = ImageAsset(name: "IMG_0522")
 }
 extension Image {
 convenience init!(asset: ImageAsset) {

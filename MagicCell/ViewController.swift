@@ -38,6 +38,12 @@ extension ViewController : UITableViewDelegate,UITableViewDataSource{
             
             return cell
             
+        }else if indexPath.row%10 == 5 {
+            
+            let cell = SecondTableViewCell.cellWithTableView(tableView: tableView)
+            
+            return cell
+            
         }else{
             
             let cellID = "cellID"
@@ -59,7 +65,7 @@ extension ViewController : UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        if indexPath.row%10 == 9 {
+        if indexPath.row%10 == 9 || indexPath.row%10 == 5{
             return magicHeight
         }
         return 100.0
@@ -73,6 +79,7 @@ extension ViewController : UITableViewDelegate,UITableViewDataSource{
         
         for obj in array {
             
+            //第一种方法
             if obj.isKind(of: TableViewCell.self) {
                 
                 let cell = obj as! TableViewCell
@@ -95,9 +102,17 @@ extension ViewController : UITableViewDelegate,UITableViewDataSource{
                     
                     cell.scrollview.setContentOffset(CGPoint.init(x: 0, y: (maxOffset - scrollOffset)*speed), animated: false)
                 }
+                
+            }else if obj.isKind(of: SecondTableViewCell.self) {
+                
+                //第二中方法，获取cell距离屏幕顶部的距离，传递给cell动态改变imgView的origin.y
+                let cell = obj as! SecondTableViewCell
+                
+                let rect = cell.superview?.convert(cell.frame, to: self.view)
+                
+                cell.y = (rect?.origin.y)!
             }
         }
-        
     }
 }
 

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BE4A4988F404A683ADA76D08 /* Pods_MagicCell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 192340DC819797F5595C82DA /* Pods_MagicCell.framework */; };
+		E10D84102073209800191FC8 /* SecondTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10D840F2073209800191FC8 /* SecondTableViewCell.swift */; };
 		E12C2E4E207214DA0002C851 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12C2E4D207214DA0002C851 /* AppDelegate.swift */; };
 		E12C2E50207214DA0002C851 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12C2E4F207214DA0002C851 /* ViewController.swift */; };
 		E12C2E53207214DA0002C851 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E12C2E51207214DA0002C851 /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 		192340DC819797F5595C82DA /* Pods_MagicCell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MagicCell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6388F2F30CF23469A3459E08 /* Pods-MagicCell.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicCell.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MagicCell/Pods-MagicCell.debug.xcconfig"; sourceTree = "<group>"; };
 		D90CFD902D597490BC7716E5 /* Pods-MagicCell.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicCell.release.xcconfig"; path = "Pods/Target Support Files/Pods-MagicCell/Pods-MagicCell.release.xcconfig"; sourceTree = "<group>"; };
+		E10D840F2073209800191FC8 /* SecondTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTableViewCell.swift; sourceTree = "<group>"; };
 		E12C2E4A207214DA0002C851 /* MagicCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicCell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E12C2E4D207214DA0002C851 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E12C2E4F207214DA0002C851 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				E12C2E4D207214DA0002C851 /* AppDelegate.swift */,
 				E12C2E4F207214DA0002C851 /* ViewController.swift */,
 				E12C2E5F207216B90002C851 /* TableViewCell.swift */,
+				E10D840F2073209800191FC8 /* SecondTableViewCell.swift */,
 				E14B8FA22072217C00C6D70B /* ImageAsset.swift */,
 				E12C2E51207214DA0002C851 /* Main.storyboard */,
 				E12C2E54207214DC0002C851 /* Assets.xcassets */,
@@ -221,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E12C2E60207216B90002C851 /* TableViewCell.swift in Sources */,
+				E10D84102073209800191FC8 /* SecondTableViewCell.swift in Sources */,
 				E12C2E50207214DA0002C851 /* ViewController.swift in Sources */,
 				E14B8FA32072217C00C6D70B /* ImageAsset.swift in Sources */,
 				E12C2E4E207214DA0002C851 /* AppDelegate.swift in Sources */,
